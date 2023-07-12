@@ -1,8 +1,9 @@
 on: 
     push:
-      branches: [ "master" ]
+      branches: [ "main" ]
     workflow_dispatch:
-  jobs:
+
+jobs:
     veracode-sca-task:
       runs-on: ubuntu-latest
       name: Scan repository with Veracode SCA
